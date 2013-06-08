@@ -4,15 +4,47 @@ using System.Drawing;
 
 namespace FlatUI
 {
-	public static class FlatProgressView
+	public class FlatProgressView:UIProgressView
 	{
-		public static void Flatten(this UIProgressView progressView, UIColor trackColor, UIColor progressColor)
+		public FlatProgressView (IntPtr handle):base(handle)
 		{
-			UIImage progressImage = ImageHelper.ImageWithColor (progressColor, 4f);
-			UIImage trackImage = ImageHelper.ImageWithColor (trackColor, 4f);
+			Flatten ();	
+		}
 
-			progressView.TrackImage = trackImage.WithMinimumSize(new SizeF(10,10));
-			progressView.ProgressImage = progressImage;
+		public FlatProgressView (RectangleF frame) : base(frame)
+		{
+			Flatten ();
+		}
+
+		UIColor progressColor = FlatColors.WisteriaColor;
+		UIColor ProgressColor {
+			get {
+				return progressColor;
+			}
+			set {
+				progressColor = value;
+				Flatten ();
+			}
+		}
+
+		UIColor trackColor = FlatColors.SilverColor;
+		UIColor TrackColor {
+			get {
+				return trackColor;
+			}
+			set {
+				trackColor = value;
+				Flatten ();
+			}
+		}
+
+		void Flatten()
+		{
+			UIImage progressImage = ImageHelper.ImageWithColor (ProgressColor, 4f);
+			UIImage trackImage = ImageHelper.ImageWithColor (TrackColor, 4f);
+
+			TrackImage = trackImage.WithMinimumSize(new SizeF(10,10));
+			ProgressImage = progressImage;
 		}
 	}
 }

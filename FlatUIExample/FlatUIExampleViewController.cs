@@ -24,14 +24,17 @@ namespace FlatUIExample
 		{
 			base.ViewDidLoad ();
 			View.BackgroundColor = UIColor.White;
+			View.AutosizesSubviews = true;
 
 			// Perform any additional setup after loading the view, typically from a nib.
-			var button = new FlatButton (new RectangleF (50, 50, 250, 44));
+			var button = new FlatButton (new RectangleF (20, 20, 280, 43));
+			button.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
 			button.SetTitle ("SHOW ALERT");
 			View.AddSubview (button);
 
-			var progressView = new UIProgressView(new Rectangle(50, 150, 250, 20));
-			progressView.Flatten (FlatColors.SilverColor, FlatColors.TurquoiseColor);
+			var progressView = new FlatProgressView(new Rectangle(20, 84, 280, 20));
+			//progressView.Flatten (FlatColors.SilverColor, FlatColors.TurquoiseColor);
+			button.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
 			progressView.Progress = .5f;
 			View.AddSubview (progressView);
 		}
