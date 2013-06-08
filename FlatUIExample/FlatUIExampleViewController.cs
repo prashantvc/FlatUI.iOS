@@ -37,6 +37,10 @@ namespace FlatUIExample
 			progressView.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
 			progressView.Progress = .66f;
 			View.AddSubview (progressView);
+
+			var slider = new FlatSlider(new Rectangle(20, 114, 280, 20));
+			slider.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
+			View.AddSubview (slider);
 		}
 
 	

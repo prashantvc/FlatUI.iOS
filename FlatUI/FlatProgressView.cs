@@ -8,42 +8,45 @@ namespace FlatUI
 	{
 		public FlatProgressView (IntPtr handle):base(handle)
 		{
-			Flatten ();	
+			ConfigureProgressView ();	
 		}
 
 		public FlatProgressView (RectangleF frame) : base(frame)
 		{
-			Flatten ();
+			ConfigureProgressView ();
 		}
 
 		UIColor progressColor = FlatColors.WisteriaColor;
+
 		UIColor ProgressColor {
 			get {
 				return progressColor;
 			}
 			set {
 				progressColor = value;
-				Flatten ();
+				ConfigureProgressView ();
 			}
 		}
 
 		UIColor trackColor = FlatColors.SilverColor;
+
 		UIColor TrackColor {
 			get {
 				return trackColor;
 			}
 			set {
 				trackColor = value;
-				Flatten ();
+				ConfigureProgressView ();
 			}
 		}
 
-		void Flatten()
+		void ConfigureProgressView ()
 		{
 			UIImage progressImage = ImageHelper.ImageWithColor (ProgressColor, 4f);
 			UIImage trackImage = ImageHelper.ImageWithColor (TrackColor, 4f);
 
-			TrackImage = trackImage.WithMinimumSize(new SizeF(10,10));
+			TrackImage = trackImage.WithMinimumSize (
+				10, 10);
 			ProgressImage = progressImage;
 		}
 	}

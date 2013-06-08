@@ -10,6 +10,21 @@ namespace FlatUI
 		{
 		}
 
+		public static UIImage CircularImageWithColor(UIColor color, SizeF size){
+			var rect = new RectangleF(0,0, size.Width, size.Height);
+			var circle = UIBezierPath.FromOval (rect);
+			UIGraphics.BeginImageContextWithOptions (rect.Size, false, 0f);
+			color.SetFill ();
+			color.SetStroke ();
+			circle.AddClip ();
+			circle.Fill ();
+			circle.Stroke ();
+			var image = UIGraphics.GetImageFromCurrentImageContext ();
+			UIGraphics.EndImageContext ();
+
+			return image;
+		}
+
 		public static UIImage ButtonImage (UIColor color, float cornerRadius, UIColor shadowColor, UIEdgeInsets shadowInsets)
 		{
 
@@ -24,13 +39,14 @@ namespace FlatUI
 			RectangleF bottomRect = new RectangleF (0, 0, totalWidth, totalHeight);
 
 			UIGraphics.BeginImageContextWithOptions (new SizeF (totalWidth, totalHeight), false, 0.0f);
+
 			if (!RectangleF.Equals (bottomRect, topRect)) {
 				bottomImage.Draw (bottomRect);
 			}
 			topImage.Draw (topRect);
 
 			UIImage buttonImage = UIGraphics.GetImageFromCurrentImageContext ();
-
+			UIGraphics.EndImageContext ();
 			UIEdgeInsets resizeableInsets = new UIEdgeInsets (cornerRadius + shadowInsets.Top,
 			                                                  cornerRadius + shadowInsets.Left,
 			                                                  cornerRadius + shadowInsets.Bottom,
@@ -64,8 +80,9 @@ namespace FlatUI
 
 	public static class UIImageExtensions
 	{
-		public static UIImage WithMinimumSize (this UIImage image, SizeF size)
+		public static UIImage WithMinimumSize (this UIImage image, float width, float height)
 		{
+			var size = new SizeF (width, height);
 			var rect = new RectangleF (0, 0, size.Width, size.Height);
 			UIGraphics.BeginImageContextWithOptions (size, false, 0.0f);
 			image.Draw (rect);
