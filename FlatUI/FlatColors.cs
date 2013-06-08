@@ -13,7 +13,6 @@ namespace FlatUI
 		public static UIColor FromHex (int bgr)
 		{
 			var result = UIColor.FromRGB (((bgr >> 16) & 0xFF), ((bgr >> 8) & 0xFF), (bgr & 0xFF));
-			Console.WriteLine (result.ToString ());
 			return result;
 		}
 
@@ -69,7 +68,7 @@ namespace FlatUI
 			get{ return FromHex (0xE67E22);}
 		}
 
-		public static UIColor  pumpkinColor {
+		public static UIColor  PumpkinColor {
 			get{ return FromHex (0xD35400);}
 		}
 
@@ -77,7 +76,7 @@ namespace FlatUI
 			get{ return FromHex (0xE74C3C);}
 		}
 
-		public static UIColor  pomegranateColor {
+		public static UIColor  PomegranateColor {
 			get{ return FromHex (0xC0392B);}
 		}
 
