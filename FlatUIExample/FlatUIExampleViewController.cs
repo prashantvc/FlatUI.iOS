@@ -34,8 +34,8 @@ namespace FlatUIExample
 
 			var progressView = new FlatProgressView(new Rectangle(20, 84, 280, 20));
 			//progressView.Flatten (FlatColors.SilverColor, FlatColors.TurquoiseColor);
-			button.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
-			progressView.Progress = .5f;
+			progressView.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
+			progressView.Progress = .66f;
 			View.AddSubview (progressView);
 		}
 
