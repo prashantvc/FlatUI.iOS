@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatUI", "FlatUI\FlatUI.csproj", "{34B321F4-9AFF-4402-8929-E4CC8FAB2449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatUIExample", "FlatUIExample\FlatUIExample.csproj", "{E2E0AE75-693A-42D3-B8CE-59E944B89312}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Release|iPhone.Build.0 = Release|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{34B321F4-9AFF-4402-8929-E4CC8FAB2449}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Release|iPhone.Build.0 = Release|iPhone
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E2E0AE75-693A-42D3-B8CE-59E944B89312}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = FlatUIExample\FlatUIExample.csproj
+	EndGlobalSection
+EndGlobal

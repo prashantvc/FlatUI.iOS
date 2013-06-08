@@ -1,0 +1,32 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FlatUIBinding/ApiDefinition.cs">
+    <Files>
+      <File FileName="FlatUI.iOS/DetailViewController.cs" Line="27" Column="10" />
+      <File FileName="FlatUIBinding/ApiDefinition.cs" Line="73" Column="31" />
+      <File FileName="FlatUIBinding/libFlatUI.linkwith.cs" Line="5" Column="1" />
+      <File FileName="FlatUI.iOS/Main.cs" Line="7" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="FlatUI" expanded="True" />
+          <Node name="FlatUI.iOS" expanded="True">
+            <Node name="References" expanded="True" />
+          </Node>
+          <Node name="FlatUIBinding" expanded="True">
+            <Node name="Properties" expanded="True" />
+            <Node name="ApiDefinition.cs" selected="True" />
+            <Node name="libFlatUI.a" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/prashantvc/GitProjects/FlatUI.iOS/FlatUI.iOS/DetailViewController.cs" line="51" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
