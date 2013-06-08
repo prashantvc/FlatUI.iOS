@@ -1,6 +1,4 @@
-using System;
 using System.Drawing;
-using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using FlatUI;
 
@@ -33,7 +31,6 @@ namespace FlatUIExample
 			View.AddSubview (button);
 
 			var progressView = new FlatProgressView(new Rectangle(20, 84, 280, 20));
-			//progressView.Flatten (FlatColors.SilverColor, FlatColors.TurquoiseColor);
 			progressView.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
 			progressView.Progress = .66f;
 			View.AddSubview (progressView);

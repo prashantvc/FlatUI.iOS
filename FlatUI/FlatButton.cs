@@ -1,16 +1,15 @@
-using System;
 using MonoTouch.UIKit;
 using System.Drawing;
 
 namespace FlatUI
 {
-	public class FlatButton:UIButton
+	public sealed class FlatButton:UIButton
 	{
 		UIEdgeInsets defaultEdgeInsets;
 		UIEdgeInsets normalEdgeInsets;
 		UIEdgeInsets highlightedEdgeInsets;
-		UIColor color = FlatColors.TurquoiseColor;
-		UIColor shadowColor = FlatColors.GreenSeaColor;
+		UIColor color = FlatColors.Turquoise;
+		UIColor shadowColor = FlatColors.GreenSea;
 		float cornerRadius = 6f;
 		float shadowHeight = 3f;
 
@@ -20,8 +19,8 @@ namespace FlatUI
 			this.defaultEdgeInsets = TitleEdgeInsets;
 			//TODO: make custom fonts work
 			TitleLabel.Font = UIFont.BoldSystemFontOfSize (16);
-			SetTitleColor (FlatColors.CloudsColor, UIControlState.Normal);
-			SetTitleColor (FlatColors.CloudsColor, UIControlState.Highlighted);
+			SetTitleColor (FlatColors.Clouds, UIControlState.Normal);
+			SetTitleColor (FlatColors.Clouds, UIControlState.Highlighted);
 			CornerRadius = 6f;
 			ShadowHeight = 3f;
 

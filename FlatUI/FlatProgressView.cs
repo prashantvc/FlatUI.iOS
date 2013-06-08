@@ -16,7 +16,7 @@ namespace FlatUI
 			ConfigureProgressView ();
 		}
 
-		UIColor progressColor = FlatColors.WisteriaColor;
+		UIColor progressColor = FlatColors.Wisteria;
 
 		UIColor ProgressColor {
 			get {
@@ -28,7 +28,7 @@ namespace FlatUI
 			}
 		}
 
-		UIColor trackColor = FlatColors.SilverColor;
+		UIColor trackColor = FlatColors.Silver;
 
 		UIColor TrackColor {
 			get {

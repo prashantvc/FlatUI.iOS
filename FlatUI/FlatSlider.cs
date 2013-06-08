@@ -1,4 +1,3 @@
-using System;
 using MonoTouch.UIKit;
 using System.Drawing;
 
@@ -6,10 +5,10 @@ namespace FlatUI
 {
 	public class FlatSlider : UISlider
 	{
-		UIColor progressColor =FlatColors.AlizarinColor;
-		UIColor trackColor  = FlatColors.SilverColor;
-		UIColor highlightedThumbColor = FlatColors.PomegranateColor;
-		UIColor normalThumbColor = FlatColors.PomegranateColor;
+		UIColor progressColor =FlatColors.Alizarin;
+		UIColor trackColor  = FlatColors.Silver;
+		UIColor highlightedThumbColor = FlatColors.Pomegranate;
+		UIColor normalThumbColor = FlatColors.Pomegranate;
 
 		public FlatSlider (RectangleF frame): base(frame)
 		{
@@ -18,6 +17,7 @@ namespace FlatUI
 
 		UIColor HighlightedThumbColor {
 			get {
+
 				return highlightedThumbColor;
 			}
 			set {
